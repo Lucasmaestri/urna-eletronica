@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.urna {
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+.tela {
+    width: 500px;
+    height: 350px;
+    background: linear-gradient(#e8e8e8, #c1c1c1);
+}
+.teclado {
+    background-color: #403434;
+    margin-left: 20px;
+}
+.teclado-linha {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.teclado-botao {
+    width: 70px;
+    height: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555555;
+}
+.botao--branco {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+}
+.botao--corrige {
+    background-color: #ff9100;
+    color: #000000;
+    font-size: 14px;
+}
+.botao--confirma {
+    background-color: #00ff88;
+    color: #000000;
+    font-size: 14px;
+    width: 90px;
+    height: 50px;
+}
