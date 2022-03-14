@@ -1,8 +1,17 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+@keyframes pisca {
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+}
+
+
 body {
     display: flex;
     justify-content: center;
@@ -20,6 +29,9 @@ body {
     width: 500px;
     height: 350px;
     background: linear-gradient(#e8e8e8, #c1c1c1);
+    border: 2px solid #555555;
+    display: flex;
+    flex-direction: column;
 }
 .teclado {
     background-color: #403434;
@@ -59,4 +71,76 @@ body {
     font-size: 14px;
     width: 90px;
     height: 50px;
+}
+
+/*CONFIRACAO DA TELA*/
+
+.d-1 {
+    flex: 1;
+    display: flex;
+}
+.d-1-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.d-1-1 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.d-1-2 {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d-1-3 {
+    height: 50px;
+}
+.numero {
+    width: 30px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #000000;
+    font-size: 25px;
+}
+.pisca {
+    animation-name: pisca;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.d-1-4 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+}
+.d-1-right {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.d-1-image {
+    background-color: #ffffff;
+    text-align: center;
+    border: 1px solid #555555;
+}
+.d-1-image.small{
+    width: 80%;
+}
+.d-1-image img {
+    width: 100%;
+}
+.d-2 {
+    height: 50px;
+    border-top: 2px solid #555555;
+    font-size: 12px;
+    padding: 5px 10px;
 }
