@@ -10,6 +10,7 @@ let numero = '';
 
 function comecarEtapa() {
     let etapa = etapas[etapaAtual];
+
     let numeroHtml = '';
 
     for(let i=0;i<etapa.numeros;i++) {
