@@ -1,0 +1,155 @@
+
+@keyframes pisca {
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100%{opacity: 0.2;}
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.urna {
+    background-color: #dbd5c9;
+    padding: 25px;
+    display: flex;
+}
+.tela {
+    width: 500px;
+    height: 400px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid rgb(133, 133, 133);
+    display: flex;
+    flex-direction: column;
+}
+.d-1 {
+    flex: 1;
+    display: flex;
+    padding-left: 20px;
+}
+.d-2 {
+    height: 50px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.descricao {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.desc-1 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.desc-2 {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desc-3 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.numero {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 5px;
+    font-size: 25px;
+
+}
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.desc-4 {
+    flex: 1;
+    line-height: 30px;
+}
+
+.foto {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.img-1 {
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.img-1 img {
+    width: 90px;
+    height: 90px;
+}
+.img-1.small {
+    
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+.teclado {
+    margin-left: 20px;
+    background-color: #403a3a;
+}
+.teclado--linha {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end
+}
+.teclado--botao {
+    width: 70px;
+    height: 40px;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px rgb(92, 92, 92);
+}
+.botao--branco {
+    background-color: #fff;
+    color: #000000;
+    font-size: 15px;
+}
+.botao--corrige {
+    background-color: #F09046;
+    color: #000000;
+    font-size: 15px;
+}
+.botao--confirma {
+    background-color: #48c079;
+    color: #000000;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+}
+
